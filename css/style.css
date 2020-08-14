@@ -66,7 +66,7 @@ body { font-size: 16px;
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
     font-weight: 300; }
-h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; margin-bottom: 10px; color: #18150d; font-weight: 400; 
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; margin-bottom: 10px !important; color: #18150d; font-weight: 400 !important; 
     font-family: 'Montserrat', sans-serif; text-transform: uppercase; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 h1 { font-size: 32px; line-height: 42px; }
 h2 { font-size: 24px; line-height: 32px; }
@@ -139,23 +139,28 @@ label { }
 /*-----------------------------------
     3. Buttons 
 -----------------------------------*/
-.btn { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
+.button { display: inline-block; padding: 14px 30px; margin-bottom: 0; font-size: 13px; font-weight: 800; 
     letter-spacing: 1px; line-height: 1.42857143; text-align: center; border: none; 
     text-transform: uppercase; border-radius: 100px;font-family: 'Montserrat', sans-serif; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;}
-.btn-default { color: #fff; background-color: #aa9144; }
-.btn-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }
-.btn-default.focus, .btn-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
-.btn-primary { background-color: #2d281a; color: #fff; }
-.btn-primary:hover { background-color: #18150d; color: #fff; }
-.btn-primary.focus, .btn-primary:focus { }
-.btn-white { color: #aa9144; background-color: #fff; border: 1px solid #fff; }
-.btn-white:hover { background-color: #8e7424; border-color: #8e7424; color: #fff; }
-.btn-white.focus, .btn-white:focus { background-color: #8e7424; border-color: #8e7424; color: #fff; }
-.btn-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; padding-bottom: 2px; }
-.btn-link:hover { color: #aa9144; font-weight: 700; text-decoration: none; border-bottom: 1px solid #aa9144; }
-.btn-lg { font-size: 14px; padding: 20px 30px; }
-.btn-sm { font-size: 12px; padding: 5px 10px; }
-.btn-xs { font-size: 12px; padding: 5px 7px; }
+.button-default { color: #fff; background-color: #aa9144; }
+.button-default:hover { color: #fff; background-color: #8e7424; border-color: #8e7424; }
+.button-default.focus, .button-default:focus { color: #fff; background-color: #8e7424; border-color: #8e7424; }
+.button-primary { background-color: #2d281a; color: #fff; }
+.button-primary:hover { background-color: #18150d; color: #fff; }
+.button-primary.focus, .button-primary:focus { }
+.button-white { color: #aa9144; background-color: #fff; border: 1px solid #fff; }
+.button-white:hover { background-color: #8e7424; border-color: #8e7424; color: #fff; }
+.button-white.focus, .button-white:focus { background-color: #8e7424; border-color: #8e7424; color: #fff; }
+.button-link { color: #98989c; text-transform: uppercase; font-size: 12px; font-weight: 700; letter-spacing: 2px; border-bottom: 1px solid #98989c; padding-bottom: 2px; }
+.button-link:hover { color: #aa9144; font-weight: 700; text-decoration: none; border-bottom: 1px solid #aa9144; }
+.button-lg { font-size: 14px; padding: 20px 30px; }
+.button-sm { font-size: 12px; padding: 5px 10px; }
+.button-xs { font-size: 12px; padding: 5px 7px; }
+
+.input-group-button:last-child > .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
 /*-----------------------------------
     4. General / Elements 
@@ -445,7 +450,9 @@ label { }
 .page-title { color: #fff;  font-size: 40px; font-weight: 400; letter-spacing: -1px; }
 .breadcrumb { }
 .breadcrumb>.active { }
-.page-breadcrumb {   }
+.page-breadcrumb { 
+  display: inline-block;
+  }
 .page-breadcrumb .breadcrumb { background-color: transparent; margin-bottom: 0px; font-size: 12px; text-transform: uppercase; }
 
 /*----------------------------------------------
